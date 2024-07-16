@@ -555,6 +555,56 @@ main {
   line-height: 1.6;
 }
 
+/**
+ * #technologies and skills
+ */
+
+.techskill { margin-bottom: 30px; }
+
+.techskill-title { margin-bottom: 20px; }
+
+.techskill-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.techskill-item {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+
+.techskill-avatar-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15px, -25px);
+  background: var(--bg-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+}
+
+.techskill-item-title { margin-bottom: 7px; }
+
+.techskill-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 /**
  * #testimonials 
@@ -612,7 +662,7 @@ main {
  * #testimonials-modal
  */
 
-.modal-container {
+/* .modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -719,7 +769,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
-}
+} */
 
 
 /**
@@ -1406,6 +1456,40 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
+  /* Technology & Skill */
+
+  .techskill-title { margin-bottom: 25px; }
+
+  .techskill-list {
+    gap: 30px;
+    margin: 0 -30px;
+    padding: 30px;
+    padding-bottom: 35px;
+  }
+
+  .content-card {
+    padding: 30px;
+    padding-top: 25px;
+  }
+
+  .techskill-avatar-box {
+    transform: translate(30px, -30px);
+    border-radius: 20px;
+  }
+
+  .techskill-avatar-box img { width: 80px; }
+
+  .techskill-item-title {
+    margin-bottom: 10px;
+    margin-left: 95px;
+  }
+
+  .techskill-text {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+
   /* testimonials */
 
   .testimonials-title { margin-bottom: 25px; }
@@ -1441,7 +1525,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials modal */
 
-  .modal-container { padding: 20px; }
+  /* .modal-container { padding: 20px; }
 
   .testimonials-modal {
     display: flex;
@@ -1469,7 +1553,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: block;
     flex-grow: 1;
     width: 35px;
-  }
+  } */
 
   /* clients */
 
@@ -1586,12 +1670,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials modal */
 
-  .testimonials-modal {
+  /* .testimonials-modal {
     gap: 35px;
     max-width: 680px;
   }
 
-  .modal-avatar-box img { width: 80px; }
+  .modal-avatar-box img { width: 80px; } */
 
 
 
@@ -1729,6 +1813,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
+
+  /* Technology & Skill */
+
+  .techskill-item { min-width: calc(50% - 15px); }
 
   /* testimonials */
 
