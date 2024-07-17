@@ -123,6 +123,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a { text-decoration: none; }
@@ -1092,7 +1093,7 @@ main {
   #BLOG
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+/* .blog-posts { margin-bottom: 10px; }
 
 .blog-posts-list {
   display: grid;
@@ -1170,7 +1171,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
-}
+} */
 
 
 
